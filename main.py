@@ -21,8 +21,8 @@ def train_import(model):
 
 
 def test():
-    img = np.invert(Image.open("data/digit.png").convert('L')).ravel()/255
-    network = Network.load_net("models/network_v1577543917.npy")
+    img = np.invert(Image.open("data/digit9.png").convert('L')).ravel()/255
+    network = Network.load_net("models/network_v1577542953.npy")
     print(f"I think it's a {network.test_image(img)}?")
 
 
